@@ -30,8 +30,10 @@ Traditional paper and digital certificates are easily forged, lost, or difficult
 <div align="center">
   <img src="https://i.ibb.co/RGPK98FQ/Untitled-2026-02-16-1748-excalidraw.png" alt="Nova Xi Project Visualization" width="800" />
 </div>
-
----
+## 📸 Workflow
+<p align="center">
+  <img src="https://i.ibb.co/xxxxx/your-image.png" width="700"/>
+</p>
 
 ## 🏗️ System Architecture
 ```mermaid
