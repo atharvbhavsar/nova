@@ -32,7 +32,7 @@ Traditional paper and digital certificates are easily forged, lost, or difficult
 </div>
 ## 📸 Workflow
 <div align="center">
-  <img src="https://i.ibb.co/JFjqxyfS/Untitled-2026-02-16-1748-excalidraw.png" alt="Architecture Diagram" width="800" />
+  <img src="https://i.ibb.co/9m2JQ0YJ/Untitled-2026-02-16-1748-excalidraw.png" alt="Architecture Diagram" width="800"/>
 </div>
 
 ## 🏗️ System Architecture
