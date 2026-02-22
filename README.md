@@ -1,67 +1,99 @@
-# Nova Xi: Blockchain-Powered Academic Credential System 🎓🛡️
-
-Hello! I built **Nova Xi** to solve a real-world problem: **Fake degrees and certificate fraud.** 
-
-This project uses blockchain technology to issue "Soulbound Tokens" (SBTs)—digital certificates that are permanent, cannot be forged, and belong only to the student.
-
----
-
-## 🚀 Why this project matters
-Traditional certificates are easily edited or faked. **Nova Xi** changes this by creating a "Trust Layer" using:
-- **Immutability:** Once a degree is issued on the blockchain, it stays there forever.
-- **Soulbound Tokens:** These tokens cannot be sold or transferred. They are tied to the student's unique digital identity.
-- **Instant Verification:** Employers can verify a student's entire history in 2 seconds without calling a university.
-
----
-
-## 🔥 Key Features for the Demo
-1. **Issuer Portal:** Institutions can issue single credentials or batch-upload an entire class using Excel.
-2. **AI Resume Portal:** Employers can upload a candidate's resume (PDF). Our AI automatically extracts the Token ID and cross-checks it against the blockchain to catch fraudsters.
-3. **Student Dashboard:** A clean place for students to view their achievements and "burn" (revoke) their own tokens if they want to.
-4. **Live Analytics Simulation:** A "Mission Control" view that shows exactly how data moves from a Form -> IPFS Storage -> Blockchain.
-5. **Auto-Alerts:** The system sends an automated email (via EmailJS) to the student whenever an employer verifies their data.
+<div align="center">
+  <img src="frontend/public/icon-512.svg" alt="Nova Xi Logo" width="120" />
+  <h1>Nova Xi</h1>
+  <p><b>Blockchain-Powered Academic Credential Verification System</b></p>
+  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+  [![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=flat&logo=solidity&logoColor=white)](https://soliditylang.org/)
+  [![IPFS](https://img.shields.io/badge/IPFS-65C2CB?style=flat&logo=ipfs&logoColor=white)](https://ipfs.tech/)
+  [![Hardhat](https://img.shields.io/badge/Hardhat-FFC107?style=flat&logo=hardhat&logoColor=black)](https://hardhat.org/)
+  [![Gemini](https://img.shields.io/badge/Google_Gemini-8E75B2?style=flat&logo=googlegemini&logoColor=white)](https://ai.google.dev/)
+</div>
 
 ---
 
-## 🛠️ The Technology Stack
-I used a modern "Web3" stack to build this:
-- **Smart Contracts:** Written in **Solidity** and deployed on an Ethereum L2 (Hardhat for demo).
-- **Decentralized Storage:** **IPFS (Pinata)** stores the certificate data so it's not on a central server.
-- **Frontend:** **React.js + Vite** for a fast, responsive, and professional UI.
-- **AI Intelligence:** **Google Gemini API** for parsing resumes and detecting data manipulation.
-- **Communication:** **EmailJS** for real-time security alerts.
+## 🌟 Overview
+**Nova Xi** is a next-generation "Trust Layer" for academic credentials. By leveraging **Soulbound Tokens (SBTs)** and **Decentralized Storage (IPFS)**, we eliminate educational fraud and make certificate verification instant, tamper-proof, and universally accessible.
+
+### 🛑 The Problem
+Traditional paper and digital certificates are easily forged, lost, or difficult to verify. Verification often requires weeks of communication between employers and universities.
+
+### ✅ The Solution
+- **Soulbound Tokens:** Non-transferable NFTs that represent a student's permanent achievements.
+- **AI Verification:** Automated resume parsing to detect credentials and cross-reference them with the blockchain.
+- **Immutable Proof:** Once issued, a credential cannot be altered, spoofed, or deleted by unauthorized parties.
 
 ---
 
-## 💻 How to run it locally
+## 🏗️ System Architecture
+```mermaid
+graph TD
+    A[University/Issuer] -->|Batch Upload/Form| B(Hardhat Smart Contract)
+    B -->|Metadata| C[IPFS / Pinata]
+    B -->|Issue SBT| D[Student Wallet]
+    E[Employer] -->|Upload Resume| F(Gemini AI Parsing)
+    F -->|Extract Token ID| G{Blockchain Verify}
+    G -->|Valid| H[Verified Status]
+    G -->|Fake| I[Fraud Alert]
+    G -->|Security Event| J(EmailJS Alert to Student)
+```
 
-### 1. Backend (Blockchain)
+---
+
+## 🔥 Key Features
+- **🎓 Multi-Mode Issuance:** Issue credentials via direct form input or batch-upload CSV/Excel files.
+- **🕵️ AI Resume Guardian:** Upload a PDF resume; the system extracts ID data and verifies it against the blockchain automatically.
+- **📊 Real-time Monitoring:** A live terminal simulation showing exactly how data flows from IPFS to the Smart Contract.
+- **🛡️ Self-Revocation:** Students can "burn" their own tokens if they need to update or remove a credential.
+- **📧 Security Alerts:** Instant email notifications to students whenever their credentials are verified by an employer.
+
+---
+
+## 🛠️ Technology Stack
+- **Frontend:** React.js, Vite, Tailwind CSS, Web3Modal
+- **Blockchain:** Solidity, Hardhat, Ethers.js
+- **Storage:** IPFS (Pinata)
+- **AI/ML:** Google Gemini API (AI Resume Parsing)
+- **Services:** EmailJS (Push Notifications)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisite Setup
+- Create a `.env` file in the root based on `.env.example`.
+- Ensure you have **Metamask** installed and configured for a local node.
+
+### 2. Backend (Blockchain)
 ```bash
 # Install dependencies
 npm install
 
-# Start the local blockchain node
+# Start the local Hardhat node
 npm run node
 
-# In a new terminal, deploy the contract
+# In a new terminal, deploy the smart contract
 npm run deploy:local
 ```
 
-### 2. Frontend (The Website)
+### 3. Frontend (UI)
 ```bash
 cd frontend
 npm install
 
-# Setup your keys in .env (see .env.example)
-# Then start the dev server
+# Start the development server
 npm run dev
 ```
 
 ---
 
-## 👨‍💻 Developer's Note
-I designed **Nova Xi** to be more than just a certificate generator; it's a complete ecosystem for trust in the digital age. I've focused on **aesthetics, security, and usability** to ensure that both universities and employers can adopt this easily.
+## 👨‍💻 Author
+**Atharv Bhavsar**
+- [GitHub](https://github.com/atharvbhavsar)
+- [LinkedIn](https://www.linkedin.com/in/atharv-bhavsar)
 
 ---
-
-**Built with ❤️ by Atharv Bhavsar**
+<div align="center">
+  Built with ❤️ for a more trustworthy academic world.
+</div>
