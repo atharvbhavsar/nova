@@ -1,0 +1,3 @@
+studentAddress,studentEmail,studentName,institution,degree,grade,issueDate,description,marksheetLink
+0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266,aryangupta25813@gmail.com,Raam,MIT,BSc Computer Science,3.9 GPA,2024-05-15,Summa Cum Laude,https://example.com/marksheet1.pdf
+0x70997970C51812dc3A010C7d01b50e0d17dc79C8,jane.doe@example.com,Jane Doe,Stanford University,MSc Data Science,4.0 GPA,2023-12-10,Outstanding Thesis Award,https://example.com/marksheet2.pdf

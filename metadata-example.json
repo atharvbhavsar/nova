@@ -1,0 +1,38 @@
+{
+  "name": "Bachelor of Science in Computer Science - John Doe",
+  "description": "Academic credential issued by Massachusetts Institute of Technology for completing Bachelor of Science in Computer Science with honors",
+  "institution": "Massachusetts Institute of Technology",
+  "studentName": "John Doe",
+  "degree": "Bachelor of Science in Computer Science",
+  "grade": "A (3.9/4.0 GPA)",
+  "issueDate": "2024-05-15",
+  "image": "ipfs://QmExample123.../certificate-image.png",
+  "attributes": [
+    {
+      "trait_type": "Institution",
+      "value": "Massachusetts Institute of Technology"
+    },
+    {
+      "trait_type": "Degree",
+      "value": "Bachelor of Science in Computer Science"
+    },
+    {
+      "trait_type": "Grade",
+      "value": "A (3.9/4.0 GPA)"
+    },
+    {
+      "trait_type": "Issue Date",
+      "value": "2024-05-15"
+    },
+    {
+      "trait_type": "Specialization",
+      "value": "Artificial Intelligence"
+    },
+    {
+      "trait_type": "Honors",
+      "value": "Summa Cum Laude"
+    }
+  ],
+  "external_url": "https://your-institution-website.edu",
+  "background_color": "1a1a2e"
+}

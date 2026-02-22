@@ -1,0 +1,143 @@
+# ============================================================================
+# NODE.JS PROJECT DEPENDENCIES
+# ============================================================================
+# 
+# This file lists all dependencies for reference (like requirements.txt).
+# In Node.js, dependencies are defined in package.json files.
+# 
+# TO INSTALL ALL DEPENDENCIES (ONE COMMAND):
+#   Windows:    .\install.ps1
+#   Linux/Mac:  ./install.sh
+#   Or:         npm run install-all
+#
+# This is equivalent to Python's: pip install -r requirements.txt
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# BACKEND DEPENDENCIES (Root Directory)
+# Defined in: package.json
+# ----------------------------------------------------------------------------
+
+# Production Dependencies
+@openzeppelin/contracts==5.0.1      # Secure smart contract library
+dotenv==16.4.1                       # Environment variable management
+axios==1.6.5                         # HTTP client for API requests
+form-data==4.0.0                     # Multipart form data (IPFS uploads)
+
+# Development Dependencies
+@nomicfoundation/hardhat-toolbox==4.0.0  # Hardhat testing & development tools
+hardhat==2.19.5                          # Ethereum development environment
+
+# ----------------------------------------------------------------------------
+# FRONTEND DEPENDENCIES (Frontend Directory)
+# Defined in: frontend/package.json
+# ----------------------------------------------------------------------------
+
+# Production Dependencies
+react==18.2.0                        # UI library
+react-dom==18.2.0                    # React DOM rendering
+react-router-dom==6.22.0             # Client-side routing
+ethers==6.10.0                       # Ethereum Web3 library
+axios==1.6.5                         # HTTP client
+
+# Development Dependencies
+@types/react==18.2.55                # TypeScript types for React
+@types/react-dom==18.2.19            # TypeScript types for React DOM
+@vitejs/plugin-react==4.2.1          # Vite plugin for React
+autoprefixer==10.4.17                # CSS autoprefixer for browser compatibility
+postcss==8.4.35                      # CSS transformation tool
+tailwindcss==3.4.1                   # Utility-first CSS framework
+vite==5.1.0                          # Fast frontend build tool
+
+# ============================================================================
+# SYSTEM REQUIREMENTS
+# ============================================================================
+
+# Node.js: v18.0.0 or higher
+# npm: v9.0.0 or higher
+# Git: 2.x or higher
+# MetaMask: Browser extension (latest version)
+
+# ============================================================================
+# EXTERNAL SERVICES & API KEYS NEEDED
+# ============================================================================
+
+# 1. Alchemy Account (https://www.alchemy.com/)
+#    - Required: Sepolia RPC URL and API Key
+#    - Purpose: Ethereum node provider
+#    - Cost: Free tier available
+
+# 2. Pinata Account (https://www.pinata.cloud/)
+#    - Required: API Key and API Secret
+#    - Purpose: IPFS storage for metadata
+#    - Cost: Free tier (1 GB)
+
+# 3. Sepolia Test ETH
+#    - Get from: https://sepoliafaucet.com/
+#    - Amount needed: ~0.1 ETH (free)
+#    - Purpose: Gas fees for testnet
+
+# ============================================================================
+# INSTALLATION INSTRUCTIONS
+# ============================================================================
+
+# Step 1: Install Node.js v18+ and Git
+#   Windows: Download from nodejs.org and git-scm.com
+#   Linux:   sudo apt-get install nodejs npm git
+#   Mac:     brew install node git
+
+# Step 2: Clone repository
+#   git clone https://github.com/yourusername/tokenized-academic-credentials.git
+#   cd tokenized-academic-credentials
+
+# Step 3: Install all dependencies (choose one method)
+#
+#   Method A - Installation Script (Recommended):
+#     Windows:    .\install.ps1
+#     Linux/Mac:  chmod +x install.sh && ./install.sh
+#
+#   Method B - npm Command:
+#     npm run install-all
+#
+#   Method C - Manual:
+#     npm install
+#     cd frontend && npm install && cd ..
+
+# Step 4: Configure environment variables
+#   cp .env.example .env
+#   cp frontend/.env.example frontend/.env
+#   # Edit both .env files with your API keys
+
+# Step 5: Compile and test
+#   npm run compile
+#   npm run test
+
+# Step 6: Run application
+#   Terminal 1: npm run node        (start blockchain)
+#   Terminal 2: npm run deploy:local (deploy contract)
+#   Terminal 3: npm run frontend     (start web app)
+
+# ============================================================================
+# VERIFICATION COMMANDS
+# ============================================================================
+
+# Check versions:
+#   node --version       # >= v18.0.0
+#   npm --version        # >= v9.0.0
+#   git --version        # >= 2.x
+#   npx hardhat --version  # >= 2.19.5
+
+# Test installation:
+#   npm run compile      # Should compile without errors
+#   npm run test         # All tests should pass
+
+# ============================================================================
+# DOCUMENTATION FILES
+# ============================================================================
+
+# INSTALL.md           - Installation guide with one-command setup
+# requirements.txt     - This file (comprehensive dependency reference)
+# README.md            - Complete project documentation
+# SETUP_CHECKLIST.md   - Interactive setup checklist
+
+# ============================================================================
